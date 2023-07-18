@@ -1,13 +1,16 @@
-import './App.css'
+import "./App.css";
+import Card from "./components/Card/Card";
 
 function App() {
   return (
     <>
-    <div>
-      Item card
-    </div>
+      <div className="cards-list">
+        <Card />
+        <Card />
+        <Card />
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
