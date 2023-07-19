@@ -1,10 +1,16 @@
 import "./Card.css";
 
-export default function Card() {
+export default function Card(props) {
+  // console.log(props);
+
+  const item = props.item;
+
+  // console.log(item);
+
   return (
     <div className="card">
-      <h1>Título do item</h1>
-      <img src="https://lapin.org.br/wp-content/uploads/2020/07/como-usar-a-inteligencia-artificial-no-marketing-e-melhorar-a-experiencia-do-usuario-825x477-3-1536x889.jpg" />
+      <h1>{item.nome}</h1>
+      <img src={item.imagem} />
     </div>
   );
 }
